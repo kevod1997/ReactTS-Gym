@@ -3,9 +3,10 @@ import { SelectedPage } from "@/shared/types";
 import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText1.png";
 import HomePageGraphic from "@/assets/HomePageGraphic2.png";
-import SponsorRedBull from "@/assets/SponsorRedBull.png";
-import SponsorForbes from "@/assets/SponsorForbes.png";
-import SponsorFortune from "@/assets/SponsorFortune.png";
+import SponsorFox from "@/assets/SponsorFox.png";
+import SponsorOlav from "@/assets/SponsorOlav2.png";
+import SponsorEna from "@/assets/SponsorEna.png";
+import SponsorGatorade from "@/assets/SponsorGatorade.png"
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { motion } from "framer-motion";
 
@@ -97,12 +98,13 @@ const Home = ({ setSelectedPage }: Props) => {
       {/* SPONSORS */}
       {/* PONER SPONSORS ? PREGUNTAR POR ALGUNA EMPRESA */}
       {isAboveMediumScreens && (
-        <div className="h-[150px] w-full bg-primary-100 py-10">
+        <div className="h-auto w-full bg-primary-100 py-4">
           <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-between gap-8">
-              <img alt="redbull-sponsor" src={SponsorRedBull} />
-              <img alt="forbes-sponsor" src={SponsorForbes} />
-              <img alt="fortune-sponsor" src={SponsorFortune} />
+            <div className="flex w-3/5 items-center justify-between gap-24">
+              <img alt="fox-sponsor" src={SponsorFox} />
+              <img alt="olavarria-sponsor" src={SponsorOlav} />
+              <img alt="ena-sponsor" src={SponsorEna} />
+              <img alt="gatorade-sponsor" src={SponsorGatorade} />
             </div>
           </div>
         </div>
