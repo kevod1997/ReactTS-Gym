@@ -6,33 +6,22 @@ import image4 from "@/assets/Maquinas4.png";
 import image5 from "@/assets/Barra.png";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
-import Class from "./Facilities";
+import Class from "./Instalaciones";
 
 const classes: Array<ClassType> = [
   {
-    name: "Weight Training Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image1,
   },
   {
-    name: "Yoga Classes",
     image: image2,
   },
   {
-    name: "Ab Core Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image3,
   },
   {
-    name: "Adventure Classes",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     image: image4,
   },
   {
-    name: "Fitness Classes",
     image: image5,
   },
 ];
@@ -41,12 +30,12 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const OurClasses = ({ setSelectedPage }: Props) => {
+const Instalaciones = ({ setSelectedPage }: Props) => {
   return (
   //  <div className="mt-20 bg-white">
-     <section id="ourclasses" className="w-full bg-gray-20 pt-20 pb-28">
+     <section id="instalaciones" className="w-full bg-gray-20 pt-20 pb-28">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Instalaciones)}
       >
         <motion.div
           className="mx-auto w-5/6"
@@ -66,7 +55,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
+        <div className="mt-10 h-[353px]   overflow-x-auto overflow-y-hidden sm:ml-12 md:ml-24">
           <ul className="whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class
@@ -84,4 +73,4 @@ const OurClasses = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default OurClasses;
+export default Instalaciones;

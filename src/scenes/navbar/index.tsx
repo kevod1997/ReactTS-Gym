@@ -7,6 +7,7 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import Instagram from "@/assets/InstagramLogo.png";
 import Whatsapp from "@/assets/WhatsappLogo.png";
 
+
 type Props = {
   isTopOfPage: boolean;
   selectedPage: SelectedPage;
@@ -27,7 +28,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <img alt="logo" src={Logo} className="ml-[-28px]"/>
+            
+            <a href="/#home" className="ml-[-28px] 	scroll-behavior: smooth"><img alt="logo" src={Logo} ></img></a>
+            
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
@@ -39,31 +42,31 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Benefits"
+                    page="Beneficios"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Classes"
+                    page="Instalaciones"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Contact Us"
+                    page="Contactanos"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
                 <div className={`${flexBetween} gap-8 `}>
-                  <button><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></button>
-                  <button><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></button>
+                <a href="https://www.instagram.com/goldsgym011/" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></a>
+                  <a href="https://wa.link/a4y4d2" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></a>
                 </div>
               </div>
             ) : (
               <>
                               <div className={`${flexBetween} gap-8 `}>
-                  <button><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></button>
-                  <button><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></button>
+                  <a href="https://www.instagram.com/goldsgym011/" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></a>
+                  <a href="https://wa.link/a4y4d2" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></a>
                 </div>
               <button
                 className="rounded-full bg-secondary-500 p-2"
@@ -88,24 +91,24 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           </div>
 
           {/* MENU ITEMS */}
-          <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+          <div className="ml-[25%] flex flex-col gap-10 text-2xl">
             <Link
               page="Home"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Benefits"
+              page="Beneficios"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="Instalaciones"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Contact Us"
+              page="Contactanos"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

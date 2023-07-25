@@ -8,7 +8,7 @@ type Props = {
   setSelectedPage: (value: SelectedPage) => void;
 };
 
-const ContactUs = ({ setSelectedPage }: Props) => {
+const Contactanos = ({ setSelectedPage }: Props) => {
   const inputStyles = `mb-5 w-full rounded-lg bg-gray-50
   px-5 py-3 placeholder-black shadow-xl`;
 
@@ -26,9 +26,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   };
 
   return (
-    <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
+    <section id="contactanos" className="mx-auto w-5/6 pt-24 pb-32">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Contactanos)}
       >
         {/* HEADER */}
         <motion.div
@@ -45,11 +45,6 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           <HText>
             <span>Contactanos</span> 
           </HText>
-          {/* <p className="my-5">
-            Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-            sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-            adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
-          </p> */}
         </motion.div>
 
         {/* FORM AND IMAGE */}
@@ -74,7 +69,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <input
                 className={inputStyles}
                 type="text"
-                placeholder="NAME"
+                placeholder="NOMBRE"
                 {...register("name", {
                   required: true,
                   maxLength: 100,
@@ -107,7 +102,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <textarea
                 className={inputStyles}
-                placeholder="MESSAGE"
+                placeholder="MENSAJE"
                 rows={4}
                 cols={50}
                 {...register("message", {
@@ -128,7 +123,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 type="submit"
                 className="mt-5 rounded-lg bg-gray-50 px-20 py-3 transition duration-500 hover:text-black hover:bg-gray-400 shadow-xl"
               >
-                SUBMIT
+                ENVIAR
               </button>
             </form>
           </motion.div>
@@ -146,7 +141,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           >
             <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
               <img
-                className=" rounded-xl opacity-90"
+                className=" rounded-xl opacity-90 transition duration-500 hover:opacity-70"
                 alt="contact-us-page-graphic"
                 src={ContactUsPageGraphic}
               />
@@ -158,4 +153,4 @@ const ContactUs = ({ setSelectedPage }: Props) => {
   );
 };
 
-export default ContactUs;
+export default Contactanos;

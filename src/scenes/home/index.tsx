@@ -69,9 +69,9 @@ const Home = ({ setSelectedPage }: Props) => {
       {/* SPONSORS */}
 
       {isAboveMediumScreens && (
-        <div className="h-auto w-full bg-gray-50 py-4 pl-40">
+        <div className="h-auto w-full bg-gray-50 py-4">
           <div className="mx-auto w-5/6">
-            <div className="flex w-3/5 items-center justify-center mx-20 gap-20">
+            <div className="flex items-center justify-between">
               <img alt="fox-sponsor" src={SponsorFox} />
               <img alt="olavarria-sponsor" src={SponsorOlav} />
               <img alt="ena-sponsor" src={SponsorEna} />
