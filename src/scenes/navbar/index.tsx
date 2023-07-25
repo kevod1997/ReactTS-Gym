@@ -4,7 +4,8 @@ import Logo from "@/assets/Logo3.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
-import ActionButton from "@/shared/ActionButton";
+import Instagram from "@/assets/InstagramLogo.png";
+import Whatsapp from "@/assets/WhatsappLogo.png";
 
 type Props = {
   isTopOfPage: boolean;
@@ -53,18 +54,24 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                 </div>
-                <div className={`${flexBetween} gap-8`}>
-                  <button>instagram</button>
-                  <button>wasap</button>
+                <div className={`${flexBetween} gap-8 `}>
+                  <button><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></button>
+                  <button><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></button>
                 </div>
               </div>
             ) : (
+              <>
+                              <div className={`${flexBetween} gap-8 `}>
+                  <button><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></button>
+                  <button><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></button>
+                </div>
               <button
                 className="rounded-full bg-secondary-500 p-2"
                 onClick={() => setIsMenuToggled(!isMenuToggled)}
               >
                 <Bars3Icon className="h-6 w-6 text-white" />
               </button>
+              </>
             )}
           </div>
         </div>

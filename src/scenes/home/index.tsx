@@ -1,6 +1,5 @@
 import useMediaQuery from "@/hooks/useMediaQuery";
 import { SelectedPage } from "@/shared/types";
-import ActionButton from "@/shared/ActionButton";
 import HomePageText from "@/assets/HomePageText1.png";
 import HomePageGraphic from "@/assets/HomePageGraphic2.png";
 import SponsorFox from "@/assets/SponsorFox.png";
