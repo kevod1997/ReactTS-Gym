@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
+import ContactUsPageGraphic from "@/assets/Pesas.png";
 import HText from "@/shared/HText";
 
 type Props = {
@@ -9,8 +9,8 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
-  px-5 py-3 placeholder-white`;
+  const inputStyles = `mb-5 w-full rounded-lg bg-gray-50
+  px-5 py-3 placeholder-black shadow-xl`;
 
   const {
     register,
@@ -43,7 +43,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">CONTACTANOS</span> 
+            <span>Contactanos</span> 
           </HText>
           {/* <p className="my-5">
             Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
@@ -81,7 +81,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.name && (
-                <p className="mt-1 text-primary-500">
+                <p className="mt-1">
                   {errors.name.type === "required" && "This field is required."}
                   {errors.name.type === "maxLength" &&
                     "Max length is 100 char."}
@@ -98,7 +98,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.email && (
-                <p className="mt-1 text-primary-500">
+                <p className="mt-1 ">
                   {errors.email.type === "required" &&
                     "This field is required."}
                   {errors.email.type === "pattern" && "Invalid email address."}
@@ -116,7 +116,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                 })}
               />
               {errors.message && (
-                <p className="mt-1 text-primary-500">
+                <p className="mt-1 ">
                   {errors.message.type === "required" &&
                     "This field is required."}
                   {errors.message.type === "maxLength" &&
@@ -126,7 +126,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 
               <button
                 type="submit"
-                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                className="mt-5 rounded-lg bg-gray-50 px-20 py-3 transition duration-500 hover:text-black hover:bg-gray-400 shadow-xl"
               >
                 SUBMIT
               </button>
@@ -146,7 +146,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           >
             <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
               <img
-                className="w-full"
+                className=" rounded-xl opacity-90"
                 alt="contact-us-page-graphic"
                 src={ContactUsPageGraphic}
               />

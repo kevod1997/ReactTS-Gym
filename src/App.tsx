@@ -1,6 +1,6 @@
 import Navbar from "@/scenes/navbar";
 import Home from "@/scenes/home";
-import OurClasses from "@/scenes/ourClasses";
+import OurClasses from "@/scenes/ourFacilities";
 import Benefits from "@/scenes/benefits";
 import ContactUs from "@/scenes/contactUs";
 import Footer from "@/scenes/footer";
@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20">
+    <div className="app">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

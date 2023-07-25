@@ -16,7 +16,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
   const flexBetween = "flex items-center justify-between";
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+  const navbarBackground = isTopOfPage ? "" : "bg-gray-20 drop-shadow";
 
   return (
     <nav>
@@ -54,10 +54,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                   />
                 </div>
                 <div className={`${flexBetween} gap-8`}>
-                  <p>Sign In</p>
-                  <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a Member
-                  </ActionButton>
+                  <button>instagram</button>
+                  <button>wasap</button>
                 </div>
               </div>
             ) : (
@@ -74,11 +72,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
       {/* MOBILE MENU MODAL */}
       {!isAboveMediumScreens && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+        <div className="fixed right-0 bottom-0 z-40 h-full w-[220px] bg-gray-200 drop-shadow-xl">
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              <XMarkIcon className="h-6 w-6 hover:bg-red-500 hover:rounded-full" />
             </button>
           </div>
 
