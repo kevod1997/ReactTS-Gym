@@ -14,13 +14,13 @@ const Footer = () => {
         <div className="mt-8 basis-1/4 md:mt-0">
           <h4 className="font-bold">Horarios</h4>
           <p className="my-5">Lunes a viernes de 7 hs a 13 hs. y de 15 a 21 hs.</p>
-          <p className="my-5 font-bold">Direcion</p>
+          <p className="my-5 font-bold">Dirección</p>
           <p>Av. Pellegrini 2315</p>
         </div>
         <div className="mt-8 basis-1/4 md:mt-0">
           <h4 className="font-bold">Contacto</h4>
           <p className="my-5">2284-269075</p>
-          <p >mail@mail.com</p>
+          {/* <p >mail@mail.com</p> */}
         </div>
       </div>
     </footer>

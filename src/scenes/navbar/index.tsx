@@ -66,7 +66,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               <>
                               <div className={`${flexBetween} gap-8 `}>
                   <a href="https://www.instagram.com/goldsgym011/" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Instagram} alt="" /></a>
-                  <a href="https://wa.link/a4y4d2" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></a>
+                  <a href="https://wa.link/t4hod2" target="_blank"><img className="h-[40px] hover:animate-pulse" src={Whatsapp} alt="" /></a>
                 </div>
               <button
                 className="rounded-full bg-secondary-500 p-2"

@@ -1,6 +1,6 @@
 import { SelectedPage, ClassType } from "@/shared/types";
-import image1 from "@/assets/Maquinas.jpg";
-import image2 from "@/assets/Espalda.png";
+import image1 from "@/assets/Maquina.jpg";
+import image2 from "@/assets/Espacio.jpg";
 import image3 from "@/assets/Bicicleta2.png";
 import image4 from "@/assets/Maquinas4.png";
 import image5 from "@/assets/Barra.png";
@@ -55,7 +55,7 @@ const Instalaciones = ({ setSelectedPage }: Props) => {
             </p>
           </div>
         </motion.div>
-        <div className="mt-10 h-[353px]   overflow-x-auto overflow-y-hidden sm:ml-12 md:ml-24">
+        <div className="mt-10 h-[338px]   overflow-x-auto overflow-y-hidden sm:ml-12 md:ml-24">
           <ul className="whitespace-nowrap">
             {classes.map((item: ClassType, index) => (
               <Class
