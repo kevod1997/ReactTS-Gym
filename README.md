@@ -22,6 +22,6 @@ To deploy this application, the following resources are used:
 
 ## Capturas de Pantalla
 <div style="display: flex; flex-direction: row;">
-  <img src="https://i.ibb.co/1m8J445/292shots-so.png" alt="Captura de Pantalla 1" width="400" />
-  <img src="https://i.ibb.co/1Q5tn6R/804shots-so.png" alt="Captura de Pantalla 2" width="400" />
+  <img src="https://i.ibb.co/bmZM3JN/804shots-so.png" alt="Captura de Pantalla 1" width="400" />
+  <img src="https://i.ibb.co/bKzRGGZ/292shots-so.png" alt="Captura de Pantalla 2" width="400" />
 </div>
