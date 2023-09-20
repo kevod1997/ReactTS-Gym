@@ -1,8 +1,5 @@
 # [Gold's Gym](https://goldsgym.com.ar/)
 
-```markdown
-# Gold's Gym
-
 ## Description
 Gold's Gym is an informative landing page created using ReactTS and styled with Tailwind CSS.
 
